@@ -9,6 +9,10 @@
 }
 
 body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
     background-color: #222;
     color: #EEE;
     text-align: center;

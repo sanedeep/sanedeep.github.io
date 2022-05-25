@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
 @font-face {
@@ -8,10 +10,14 @@
     src: url(psans.ttf);
 }
 
+::-webkit-scrollbar {
+    display:none;
+}
+
+
 body {
     background-image: url(bg.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-blend-mode: soft-light;
     background-color: #111;
     color: #EEE;
@@ -19,6 +25,7 @@ body {
     padding: 2em 0;
     font-family: product-sans;
 }
+
 
 img { width: 10em }
 
@@ -57,19 +64,23 @@ th {
     border:none;
     text-align:right;
     vertical-align:top;
+    width:20em;
+    color: rgba(255,255,255,0.9);
 }
 
 td {
-    opacity:0.5;
+    color:rgba(255,255,255,0.5);
     border:none;
     text-align:left;
+    width:20em;
 }
 
 ul {
     padding: 1em;
     list-style: none;
+    margin-left:-8em;
 }
 
 ul > h3 { padding: 0.5em }
 
-li { padding: 0.5em }
+li { padding: 0.5em; }

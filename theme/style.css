@@ -177,6 +177,7 @@ section {
 #projects .cards span {
     position: absolute;
     right: 1em;
+    font-size:large;
 }
 
 .next-contact {

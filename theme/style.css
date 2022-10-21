@@ -40,18 +40,22 @@ section {
 }
 
 .btn {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    padding-bottom: .5em;
-    font-weight: bolder;
+    display: block;
+    padding: 0.5em 0.5em;
+    font-weight: bold;
+    font-size: large;
     border-radius: 8em;
     text-decoration: none;
     transition-duration: 500ms;
+
+}
+
+.btn::after {
+    content: "↯";
 }
 
 .btn:hover {
-    width: 4em;
+    padding: .5em 1em;
     transition-duration: 500ms;
 }
 

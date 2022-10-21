@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+@font-face {
+    font-family: product-sans;
+    src: url(psans.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    font-family: product-sans;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding-bottom: .5em;
+    font-weight: bolder;
+    border-radius: 8em;
+    text-decoration: none;
+    transition-duration: 500ms;
+}
+
+.btn:hover {
+    width: 4em;
+    transition-duration: 500ms;
+}
+
+#home {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #111111;
+    color: #f8f9fa;
+}
+
+
+#home img {
+    width: 10em;
+}
+
+#home p {
+    max-width: 25em;
+    margin: 1em;
+}
+
+#home h2 {
+    color: #3DDC84
+}
+
+.next-skills {
+    background-color: #3DDC84;
+    color: #111111;
+}
+
+#skills-and-education {
+    background-color: #3DDC84;
+}
+
+#skills-and-education .cards {
+    display: flex;
+    justify-content: space-between;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#skills-and-education .edu {
+    text-align: start;
+}
+
+#skills-and-education .skills {
+    text-align: end;
+}
+
+#skills-and-education .cards h2 {
+    margin-bottom: 1em;
+}
+
+#skills-and-education .cards ul {
+    list-style: none;
+}
+
+#skills-and-education .cards>ul>li {
+    margin-top: .5em;
+}
+
+#skills-and-education .cards ul li ul {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#skills-and-education .edu li ul li:before {
+    content: "⤷ ";
+}
+
+#skills-and-education .skills li ul li:after {
+    content: " ⤶";
+}
+
+.next-projects {
+    background-color: #1769e0;
+    color: #f8f9fa;
+}
+
+#projects {
+    background-color: #1769e0;
+    color: #f8f9fa;
+}
+
+#projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects .cards a {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+    padding: .8em 1em;
+    margin: 0.5em;
+    width: 10em;
+    height: fit-content;
+    border-radius: .8em;
+    border: solid #f8f9fa .1em;
+    color: #f8f9fa;
+    transition-duration: 300ms;
+    position: relative;
+}
+
+#projects .cards a:hover {
+    background-color: #f8f9fa;
+    color: #111111;
+    transition-duration: 300ms;
+}
+
+#projects .cards p {
+    opacity: 0.5;
+}
+
+#projects .cards span {
+    position: absolute;
+    right: 1em;
+}
+
+.next-contact {
+    background-color: #f8f9fa;
+    color: #111111;
+}
+
+#contact {
+    background-color: #f8f9fa;
+    color: #111111;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact div>a {
+    text-decoration: none;
+    color: #1769e0;
+    margin: .5em;
+    transition-duration: 300ms;
+    display: flex;
+    justify-content: space-between;
+    width: 6em;
+    border: dashed #1769e0 .1em;
+    padding: 0.5em 1em;
+    border-radius: 8em;
+}
+
+#contact div>a:hover {
+    color: #f8f9fa;
+    background-color: #1769e0;
+    border-color: #00000000;
+    transition-duration: 300ms;
+}
+
+#contact div>a:after {
+    content: " ↗";
+}
+
+.to-top {
+    background-color: #37474f;
+    color: #f8f9fa;
+    rotate: 180deg;
+}

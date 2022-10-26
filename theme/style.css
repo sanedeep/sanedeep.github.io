@@ -30,51 +30,6 @@ section {
     width: 100vw;
 }
 
-@media print {
-    .btn-print {
-        display: none;
-    }
-
-    .print-only {
-        display: inline !important;
-        color: #111111 !important;
-    }
-
-    #projects .cards a {
-        border: solid #111111 .1em !important;
-        min-width: 33em !important;
-    }
-
-    #projects .cards span {
-        display: none !important;
-    }
-
-    #contact div>a {
-        border: none !important;
-        justify-content: flex-start !important;
-    }
-
-    #contact div>a:after {
-        content: "" !important;
-    }
-}
-
-.print-only {
-    display: none;
-}
-
-.btn-print {
-    position: fixed;
-    background-color: #f8f9fa;
-    border-radius: 8em;
-    right: .5em;
-    bottom: 1em;
-    color: #111111;
-    padding: .3em 1em;
-    cursor: pointer;
-    mix-blend-mode: exclusion;
-}
-
 .center {
     display: flex;
     justify-content: center;

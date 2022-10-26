@@ -30,6 +30,51 @@ section {
     width: 100vw;
 }
 
+@media print {
+    .btn-print {
+        display: none;
+    }
+
+    .print-only {
+        display: inline !important;
+        color: #111111 !important;
+    }
+
+    #projects .cards a {
+        border: solid #111111 .1em !important;
+        min-width: 33em !important;
+    }
+
+    #projects .cards span {
+        display: none !important;
+    }
+
+    #contact div>a {
+        border: none !important;
+        justify-content: flex-start !important;
+    }
+
+    #contact div>a:after {
+        content: "" !important;
+    }
+}
+
+.print-only {
+    display: none;
+}
+
+.btn-print {
+    position: fixed;
+    background-color: #f8f9fa;
+    border-radius: 8em;
+    right: .5em;
+    bottom: 1em;
+    color: #111111;
+    padding: .3em 1em;
+    cursor: pointer;
+    mix-blend-mode: exclusion;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -155,8 +200,8 @@ section {
     text-decoration: none;
     padding: .8em 1em;
     margin: 0.5em;
-    width: 10em;
-    height: fit-content;
+    min-width: 10em;
+    text-align: start;
     border-radius: .8em;
     border: solid #f8f9fa .1em;
     color: #f8f9fa;
@@ -177,7 +222,7 @@ section {
 #projects .cards span {
     position: absolute;
     right: 1em;
-    font-size:large;
+    font-size: large;
 }
 
 .next-contact {
@@ -202,7 +247,7 @@ section {
     transition-duration: 300ms;
     display: flex;
     justify-content: space-between;
-    width: 6em;
+    min-width: 6em;
     border: dashed #1769e0 .1em;
     padding: 0.5em 1em;
     border-radius: 8em;

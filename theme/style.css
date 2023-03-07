@@ -26,13 +26,12 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
 .center {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -67,7 +66,6 @@ section {
     color: #f8f9fa;
 }
 
-
 #home img {
     width: 10em;
 }
@@ -92,18 +90,22 @@ section {
 
 #skills-and-education .cards {
     display: flex;
-    justify-content: space-between;
-    border-left: solid black 1px;
-    border-right: solid black 1px;
-    padding: 1em;
+    flex-flow:wrap;
+    justify-content: center;
     border-radius: 1em;
 }
 
 #skills-and-education .edu {
+    border-radius: 1em;
+    padding:1em 0 1em 1em;
+    border-left: solid black 1px;
     text-align: start;
 }
 
 #skills-and-education .skills {
+    border-radius: 1em;
+    padding:1em 1em 1em 0em;
+    border-right: solid black 1px;
     text-align: end;
 }
 
@@ -120,8 +122,8 @@ section {
 }
 
 #skills-and-education .cards ul li ul {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 #skills-and-education .edu li ul li:before {

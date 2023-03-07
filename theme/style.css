@@ -97,14 +97,14 @@ section {
 
 #skills-and-education .edu {
     border-radius: 1em;
-    padding:1em 0 1em 1em;
+    padding:1em;
     border-left: solid black 1px;
     text-align: start;
 }
 
 #skills-and-education .skills {
     border-radius: 1em;
-    padding:1em 1em 1em 0em;
+    padding:1em;
     border-right: solid black 1px;
     text-align: end;
 }

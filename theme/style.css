@@ -182,22 +182,22 @@ section {
     font-size: large;
 }
 
-.next-contact {
+.next-links {
     background-color: #f8f9fa;
     color: #111111;
 }
 
-#contact {
+#links {
     background-color: #f8f9fa;
     color: #111111;
 }
 
-#contact div {
+#links div {
     display: flex;
     flex-direction: column;
 }
 
-#contact div>a {
+#links div>a {
     text-decoration: none;
     color: #1769e0;
     margin: .5em;
@@ -210,14 +210,14 @@ section {
     border-radius: 8em;
 }
 
-#contact div>a:hover {
+#links div>a:hover {
     color: #f8f9fa;
     background-color: #1769e0;
     border-color: #00000000;
     transition-duration: 300ms;
 }
 
-#contact div>a:after {
+#links div>a:after {
     content: " ↗";
 }
 

@@ -2,227 +2,79 @@
     padding: 0;
     margin: 0;
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
 }
 
 @font-face {
     font-family: product-sans;
-    src: url(psans.ttf);
+    src: url(plex.ttf);
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    user-select: none;
-}
-
 body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    user-select: none;
     font-family: product-sans;
 }
 
-section {
-    min-height: 100vh;
-    width: 100vw;
-}
 
-.center {
+div {
+    flex: 25%;
+    min-width: 300px;
+    min-height: 300px;
+    height: 50vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.btn {
-    display: block;
-    padding: 0.5em 0.5em;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 8em;
-    text-decoration: none;
-    transition-duration: 500ms;
-
-}
-
-.btn::after {
-    content: "↯";
-}
-
-.btn:hover {
-    padding: .5em 1em;
-    transition-duration: 500ms;
-}
-
-#home {
-    background-image: url(bg.jpg);
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-color: #111111;
-    color: #f8f9fa;
-}
-
-#home img {
-    width: 10em;
-}
-
-#home p {
-    max-width: 25em;
-    margin: 1em;
-}
-
-#home h2 {
-    color: #3DDC84
-}
-
-.next-skills {
-    background-color: #3DDC84;
-    color: #111111;
-}
-
-#skills-and-education {
-    background-color: #3DDC84;
-}
-
-#skills-and-education .cards {
-    display: flex;
-    flex-flow:wrap;
     justify-content: center;
-    border-radius: 1em;
-}
-
-#skills-and-education .edu {
-    border-radius: 1em;
-    padding:1em;
-    border-left: solid black 1px;
-    text-align: start;
-}
-
-#skills-and-education .skills {
-    border-radius: 1em;
-    padding:1em;
-    border-right: solid black 1px;
-    text-align: end;
-}
-
-#skills-and-education .cards h2 {
-    margin-bottom: 1em;
-}
-
-#skills-and-education .cards ul {
-    list-style: none;
-}
-
-#skills-and-education .cards>ul>li {
-    margin-top: .5em;
-}
-
-#skills-and-education .cards ul li ul {
-    margin-left: .5em;
-    margin-right: .5em;
-}
-
-#skills-and-education .edu li ul li:before {
-    content: "⤷ ";
-}
-
-#skills-and-education .skills li ul li:after {
-    content: " ⤶";
-}
-
-.next-projects {
-    background-color: #1769e0;
-    color: #f8f9fa;
-}
-
-#projects {
-    background-color: #1769e0;
-    color: #f8f9fa;
-}
-
-#projects .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#projects .cards a {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    text-decoration: none;
-    padding: .8em 1em;
-    margin: 0.5em;
-    min-width: 10em;
-    text-align: start;
-    border-radius: .8em;
-    border: solid #f8f9fa .1em;
-    color: #f8f9fa;
-    transition-duration: 300ms;
     position: relative;
 }
 
-#projects .cards a:hover {
-    background-color: #f8f9fa;
-    color: #111111;
-    transition-duration: 300ms;
+div>h1 {
+    margin-bottom: .3em;
 }
 
-#projects .cards p {
-    opacity: 0.5;
-}
-
-#projects .cards span {
+div>h2 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    opacity: 0.3;
     position: absolute;
-    right: 1em;
-    font-size: large;
+    top: .5em;
+    left: .6em;
 }
 
-.next-links {
-    background-color: #f8f9fa;
-    color: #111111;
+div>p {
+    margin: 0 1em 1em;
+    width: 90%;
 }
 
-#links {
-    background-color: #f8f9fa;
-    color: #111111;
-}
-
-#links div {
-    display: flex;
-    flex-direction: column;
-}
-
-#links div>a {
+a {
     text-decoration: none;
-    color: #1769e0;
-    margin: .5em;
-    transition-duration: 300ms;
-    display: flex;
-    justify-content: space-between;
-    min-width: 6em;
-    border: dashed #1769e0 .1em;
-    padding: 0.5em 1em;
-    border-radius: 8em;
+    width: 90%;
+    color: black;
+    padding: .5em;
 }
 
-#links div>a:hover {
-    color: #f8f9fa;
-    background-color: #1769e0;
-    border-color: #00000000;
-    transition-duration: 300ms;
+a:before {
+    content: "↗ ";
 }
 
-#links div>a:after {
-    content: " ↗";
+a:hover {
+    color: purple;
 }
 
-.to-top {
-    background-color: #37474f;
-    color: #f8f9fa;
-    rotate: 180deg;
+#main,
+#about,
+#education,
+#links,
+#android,
+#flutter,
+#other,
+#projects {
+    transition-duration: 2s;
 }

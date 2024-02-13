@@ -56,7 +56,6 @@ div>p {
 a {
     text-decoration: none;
     color: black;
-    padding: .5em;
 }
 
 a:before {

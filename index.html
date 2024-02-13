@@ -48,12 +48,14 @@
         </p>
     </div>
 
-    <div id="links">
-        <h2>＠ Links</h2>
-
-        <a href="https://github.com/sanedeep" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/sanedeep" target="_blank">LinkedIn</a>
-        <a rel="me" href="https://mas.to/@sanedeep" target="_blank">Mastodon</a>
+    <div id="projects">
+        <h2>⌨ Projects</h2>
+        <p>
+            <a href="https://play.google.com/store/apps/details?id=com.mdev.wallit" target="_blank">WALLit</a>
+        </p>
+        <p>
+            <a href="https://play.google.com/store/apps/details?id=com.mdev.jameenmitra" target="_blank">Jamin Mitra</a>
+        </p>
     </div>
 
     <div id="android">
@@ -86,24 +88,29 @@
         </p>
     </div>
 
-    <div id="projects">
-        <h2>⌨ Projects</h2>
-
-        <a href="https://play.google.com/store/apps/details?id=com.mdev.wallit" target="_blank">WALLit</a>
-        <a href="https://play.google.com/store/apps/details?id=com.mdev.jameenmitra" target="_blank">Jamin Mitra</a>
+    <div id="links">
+        <h2>＠ Links</h2>
+        <p>
+            <a href="https://github.com/sanedeep" target="_blank">GitHub</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/sanedeep" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+            <a rel="me" href="https://mas.to/@sanedeep" target="_blank">Mastodon</a>
+        </p>
     </div>
 
     <script src="theme/randomColor.min.js"></script>
     <script>
         function setColors() {
-            hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome']
+            divs = ["main", "about", "education", "projects", "android", "flutter", "other", "links"];
+            hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome'];
             colors = randomColor({
                 luminosity: 'light',
                 hue: hues[Math.floor(Math.random() * hues.length)],
-                count: 8,
+                count: divs.length,
             });
-
-            divs = ["main", "about", "education", "links", "android", "flutter", "other", "projects"];
 
             for (let i = 0; i < colors.length; i++) {
                 document.getElementById(divs[i]).style.backgroundColor = colors[i];

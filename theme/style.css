@@ -15,14 +15,24 @@
 }
 
 body {
+    background:url('https://source.unsplash.com/random/768x768/?gradient');
     background-size:cover;
-    background-position:fixed;
-    background-repeat:no-repeat;
+    background-attachment: local;
+    user-select: none;
+    font-family: product-sans;
+}
+
+.bg {
+    backdrop-filter: blur(8px); 
+    position:absolute fixed;
+    height:100%;
+    width:100%;
+}
+
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    user-select: none;
-    font-family: product-sans;
 }
 
 
@@ -77,6 +87,5 @@ a:hover {
 #flutter,
 #other,
 #projects {
-    backdrop-filter: blur(8px); 
     transition-duration: 2s;
 }

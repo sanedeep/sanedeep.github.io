@@ -77,6 +77,6 @@ a:hover {
 #flutter,
 #other,
 #projects {
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(8px); 
     transition-duration: 2s;
 }

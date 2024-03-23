@@ -15,6 +15,7 @@
 }
 
 body {
+    background-size:cover;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -74,5 +75,6 @@ a:hover {
 #flutter,
 #other,
 #projects {
+    backdrop-filter: blur(10px); 
     transition-duration: 2s;
 }

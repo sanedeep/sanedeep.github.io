@@ -15,7 +15,7 @@
     <title>Sandeep Bhutiya</title>
 </head>
 
-<body>
+<body id="bg">
     <div id="main">
         <h1>
             <\>
@@ -26,7 +26,7 @@
 
     <div id="about">
         <h2>ッ About</h2>
-
+        
         <p>
             A passionate programmer with knowledge of <b>android development</b> using <b>kotlin</b> and
             <b>flutter</b>.
@@ -103,6 +103,9 @@
 
     <script src="theme/randomColor.min.js"></script>
     <script>
+        imageUrl = "url('https://source.unsplash.com/random/"+screen.width+"x"+screen.height+"/?minimal+wallpaper')"; 
+        document.getElementById("bg").style.backgroundImage = imageUrl;
+        
         function setColors() {
             divs = ["main", "about", "education", "projects", "android", "flutter", "other", "links"];
             hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome'];
@@ -110,6 +113,8 @@
                 luminosity: 'light',
                 hue: hues[Math.floor(Math.random() * hues.length)],
                 count: divs.length,
+                format: 'rgba',
+                alpha: 0.3
             });
 
             for (let i = 0; i < colors.length; i++) {

@@ -42,12 +42,35 @@
         <div id="education">
             <h2>∡ Education</h2>
 
-            <p>
-                <b>Master of Computer Application</b> <br>
-                in <b>2020</b> <br>
-                with <b>First Class</b> <br>
-                at <b>Saurashtra University</b>
-            </p>
+            <div class="siema">
+                <p>
+                    <b>Master of Computer Application</b> <br>
+                    with <b>First Class</b> <br>
+                    in <b>2020</b> <br>
+                    at <b>Saurashtra University</b>
+                </p>
+                
+                <p>
+                    <b>Bachelor of Computer Application</b> <br>
+                    with <b>First Distinction</b> <br>
+                    in <b>2017</b> <br>
+                    at <b>Saurashtra University</b>
+                </p>
+                
+                <p>
+                    <b>HSC (12<sup>th</sup>)</b> <br>
+                    with <b>Grade B1</b> <br>
+                    in <b>2014</b> <br>
+                    at <b>GSEB</b>
+                </p>
+                
+                <p>
+                    <b>SSC (10<sup>th</sup>)</b> <br>
+                    with <b>Grade B1</b> <br>
+                    in <b>2012</b> <br>
+                    at <b>GSEB</b>
+                </p>
+            </div>
         </div>
 
         <div id="projects">
@@ -105,10 +128,13 @@
     </div>
 
     <script src="theme/randomColor.min.js"></script>
+    <script src="theme/siema.min.js"></script>
     <script>
+        const siema = new Siema({ loop: true })
+        const divs = ["main", "about", "education", "projects", "android", "flutter", "other", "links"];
+        const hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome'];
+
         function setColors() {
-            divs = ["main", "about", "education", "projects", "android", "flutter", "other", "links"];
-            hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome'];
             colors = randomColor({
                 luminosity: 'light',
                 hue: hues[Math.floor(Math.random() * hues.length)],
@@ -121,8 +147,15 @@
                 document.getElementById(divs[i]).style.backgroundColor = colors[i];
             }
         }
+       
+        
+        function toInfinityAndBeyond() {
+            siema.next()
+            setColors()
+        }
+        
         setColors()
-        setInterval(setColors, 5000)
+        setInterval(toInfinityAndBeyond, 5000)
     </script>
 
 </body>

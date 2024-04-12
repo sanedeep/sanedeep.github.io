@@ -3,10 +3,11 @@
     margin: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
+     transition-duration: 2s;
 }
 
-@font-face {
-    font-family: product-sans;
+@font-face { transition-duration: 2s;
+    font-family: plex;
     src: url(plex.ttf);
 }
 
@@ -15,11 +16,11 @@
 }
 
 body {
-    background:url('https://source.unsplash.com/random/768x768/?gradient');
+    background:url('https://source.unsplash.com/random/720x720/?gradient');
     background-size:cover;
     background-attachment: local;
     user-select: none;
-    font-family: product-sans;
+    font-family: plex;
 }
 
 .bg {
@@ -36,7 +37,7 @@ body {
 }
 
 
-div {
+.container > div {
     flex: 25%;
     min-width: 300px;
     min-height: 300px;
@@ -47,6 +48,7 @@ div {
     justify-content: center;
     position: relative;
 }
+
 
 div>h1 {
     margin-bottom: .3em;
@@ -61,9 +63,13 @@ div>h2 {
     left: .6em;
 }
 
-div>p {
+p {
     margin: 0 1em 1em;
     width: 90%;
+}
+
+.siema {
+    width:100%;
 }
 
 a {
@@ -77,15 +83,4 @@ a:before {
 
 a:hover {
     color: purple;
-}
-
-#main,
-#about,
-#education,
-#links,
-#android,
-#flutter,
-#other,
-#projects {
-    transition-duration: 2s;
 }

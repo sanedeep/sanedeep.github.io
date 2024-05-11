@@ -16,7 +16,7 @@
 }
 
 body {
-    background:url('https://source.unsplash.com/random/720x720/?gradient');
+    background:url('https://source.unsplash.com/random/720x720/?white');
     background-size:cover;
     background-attachment: local;
     user-select: none;

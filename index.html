@@ -16,13 +16,12 @@
 </head>
 
 <body>
-    <div class="bg">
     <div class="container">
         <div id="main">
-            <h1>
+            <h1 class="icon">
                 <\>
             </h1>
-            <h1>Sandeep Bhutiya</h1>
+            <h1 class="name">Sandeep Bhutiya</h1>
             <small>Developer & Tech Adventurer</small>
         </div>
 
@@ -42,35 +41,12 @@
         <div id="education">
             <h2>∡ Education</h2>
 
-            <div class="siema">
-                <p>
-                    <b>Master of Computer Application</b> <br>
-                    with <b>First Class</b> <br>
-                    in <b>2020</b> <br>
-                    at <b>Saurashtra University</b>
-                </p>
-                
-                <p>
-                    <b>Bachelor of Computer Application</b> <br>
-                    with <b>First Distinction</b> <br>
-                    in <b>2017</b> <br>
-                    at <b>Saurashtra University</b>
-                </p>
-                
-                <p>
-                    <b>HSC (12<sup>th</sup>)</b> <br>
-                    with <b>Grade B1</b> <br>
-                    in <b>2014</b> <br>
-                    at <b>GSEB</b>
-                </p>
-                
-                <p>
-                    <b>SSC (10<sup>th</sup>)</b> <br>
-                    with <b>Grade B1</b> <br>
-                    in <b>2012</b> <br>
-                    at <b>GSEB</b>
-                </p>
-            </div>
+            <p>
+                <b>Master of Computer Application</b> <br>
+                with <b>First Class</b> <br>
+                in <b>2020</b> <br>
+                at <b>Saurashtra University</b>
+            </p>
         </div>
 
         <div id="projects">
@@ -126,37 +102,6 @@
             </p>
         </div>
     </div>
-
-    <script src="theme/randomColor.min.js"></script>
-    <script src="theme/siema.min.js"></script>
-    <script>
-        const siema = new Siema({ loop: true })
-        const divs = ["main", "about", "education", "projects", "android", "flutter", "other", "links"];
-        const hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'monochrome'];
-
-        function setColors() {
-            colors = randomColor({
-                luminosity: 'light',
-                hue: hues[Math.floor(Math.random() * hues.length)],
-                count: divs.length,
-                format: 'rgba',
-                alpha: 0.3
-            });
-
-            for (let i = 0; i < colors.length; i++) {
-                document.getElementById(divs[i]).style.backgroundColor = colors[i];
-            }
-        }
-       
-        function toInfinityAndBeyond() {
-            siema.next()
-            setColors()
-        }
-        
-        setColors()
-        setInterval(toInfinityAndBeyond, 5000)
-    </script>
-
 </body>
 
 </html>

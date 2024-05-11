@@ -3,12 +3,11 @@
     margin: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
-     transition-duration: 2s;
 }
 
 @font-face { transition-duration: 2s;
     font-family: plex;
-    src: url(plex.ttf);
+    src: url(plex-medium.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -16,18 +15,10 @@
 }
 
 body {
-    background:url('https://source.unsplash.com/random/720x720/?white');
-    background-size:cover;
-    background-attachment: local;
+    background:#222;
     user-select: none;
     font-family: plex;
-}
-
-.bg {
-    backdrop-filter: blur(8px); 
-    position:absolute fixed;
-    height:100%;
-    width:100%;
+    color:lightgreen;
 }
 
 .container {
@@ -38,17 +29,29 @@ body {
 
 
 .container > div {
-    flex: 25%;
+    flex: 24%;
     min-width: 300px;
     min-height: 300px;
-    height: 50vh;
+    height: 49.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    border:solid 1px rgba(50,50,50,0.5);
 }
 
+.icon {
+    color:white;
+}
+
+.name {
+    color:skyblue;
+}
+
+small {
+    color:lightsalmon;
+}
 
 div>h1 {
     margin-bottom: .3em;
@@ -58,6 +61,7 @@ div>h2 {
     margin-bottom: 1em;
     text-transform: uppercase;
     opacity: 0.3;
+    color:white;
     position: absolute;
     top: .5em;
     left: .6em;
@@ -65,16 +69,12 @@ div>h2 {
 
 p {
     margin: 0 1em 1em;
-    width: 90%;
-}
-
-.siema {
-    width:100%;
+    width:90%;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 a:before {
@@ -82,5 +82,5 @@ a:before {
 }
 
 a:hover {
-    color: purple;
+    color: violet;
 }

@@ -72,10 +72,10 @@ a:hover {
   background-clip: text;
   background-size: 256%;
   color: transparent;
-  animation: move 16s linear infinite;
+  animation: txtbg 16s linear infinite alternate;
 }
 
-@keyframes move {
+@keyframes txtbg {
   to {
     background-position: 256%;
   }
